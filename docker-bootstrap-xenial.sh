@@ -23,10 +23,10 @@ echo verify using correct repo for docker
 sudo apt-cache policy docker-engine
 
 echo installing additional image packages
-sudo apt-get install linux-image-extra-$(uname -r)
+sudo apt-get install -qy linux-image-extra-$(uname -r)
 
 echo finally installing docker
-sudo apt-get install docker-engine
+sudo apt-get install -qy docker-engine
 
 
 
