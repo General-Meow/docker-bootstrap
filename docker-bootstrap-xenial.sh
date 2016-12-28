@@ -36,4 +36,8 @@ sudo apt-get install -qy docker-engine
 echo finished installing docker... testing
 sudo docker run hello-world
 
+echo doing stuff so you dont have to user sudo for docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+echo you probably need to logout and in again
 
