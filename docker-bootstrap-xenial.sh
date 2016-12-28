@@ -4,6 +4,9 @@ echo You need to run this script as root or sudo
 echo updating system packages
 sudo apt-get update -qy
 
+echo installing the extra image packages
+sudo apt-get install -qy linux-image-extra-$(uname -r) linux-image-extra-virtual
+
 echo installing ca stuff
 sudo apt-get install -qy apt-transport-https ca-certificates
 
